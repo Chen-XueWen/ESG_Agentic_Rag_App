@@ -5,7 +5,7 @@ This is a multi-agent AI system that:
 - Indexes that content into a vector database (Chroma)
 - Uses agents (Environment, Social, Governance) to evaluate performance
 - Aggregates scores into a final explainable ESG report
-- Uses LLaMA 3.2 via Ollama (local model)
+- Uses LLaMA 3.2 (local model)
 
 ## 🏗 Folder Structure
 ```
