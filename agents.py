@@ -1,11 +1,19 @@
+import requests
 from llama_cpp import Llama
 from retriever import get_relevant_context
 
 llm = Llama(model_path="path/to/llama-3.2-3b.Q4_K_M.gguf", n_ctx=2048)
 
 def call_llama(prompt):
-    output = llm(prompt, max_tokens=512, stop=["</s>"])
-    return output["choices"][0]["text"].strip()
+    response = requests.post(
+        'http://localhost:11434/api/generate',
+        json={
+            'model': 'llama3',
+            'prompt': prompt,
+            'stream': False
+        }
+    )
+    return response.json()["response"].strip()
 
 class EnvironmentAgent:
     def run(self, company):

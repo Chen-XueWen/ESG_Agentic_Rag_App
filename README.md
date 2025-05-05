@@ -5,7 +5,7 @@ This is a multi-agent AI system that:
 - Indexes that content into a vector database (Chroma)
 - Uses agents (Environment, Social, Governance) to evaluate performance
 - Aggregates scores into a final explainable ESG report
-- Uses LLaMA 3.2 (local model)
+- Uses LLaMA 3.2 via Ollama (local model)
 
 ## 🏗 Folder Structure
 ```
@@ -24,6 +24,8 @@ esg_agentic_rag_app/
 ## 🚀 How to Run
 ```bash
 pip install -r requirements.txt
+curl -fsSL https://ollama.com/install.sh | sh # Install Ollama
+ollama run llama3.2
 streamlit run app.py
 ```
 
