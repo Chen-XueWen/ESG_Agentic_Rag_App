@@ -24,7 +24,6 @@ esg_agentic_rag_app/
 ## 🚀 How to Run
 ```bash
 pip install -r requirements.txt
-ollama run llama3 &  # Start LLaMA 3.2 locally
 streamlit run app.py
 ```
 
