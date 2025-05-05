@@ -33,8 +33,3 @@ streamlit run app.py
 - Uses LangChain + Chroma for retrieval
 - Chain-of-thought LLaMA reasoning
 - Fully local, transparent, and modifiable
-
-## 🔮 Next Ideas
-- Add PDF ingestion for ESG reports
-- Visualize ESG score history
-- Use CrewAI for sub-agent coordination
